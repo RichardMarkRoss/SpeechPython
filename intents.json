@@ -29,6 +29,14 @@
                 "someday I'll be aware and you'll be sorry",
                 "I am not artificial intelligence but compared to you I am intelligent"
             ]
+        },
+        {
+            "tag" : "file",
+            "patterns" : [
+                "create a file",
+                "create new file"
+            ],
+            "responses" : []
         }
     ]
 }

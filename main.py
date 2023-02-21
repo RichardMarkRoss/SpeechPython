@@ -2,15 +2,15 @@ import sys
 import threading
 import tkinter as tk
 
-import speech_recognition
 import pyttsx3 as tts
+import speech_recognition as sr
 
 from  neuralintents import GenericAssistant
 
 class Assistant:
     
     def __init__(self) -> None:
-        self.recognition = speech_recognition.Recognizer()
+        self.recognition = sr.Recognizer()
         self.speaker = tts.init()
         self.speaker.setProperty("rate", 150)
         
@@ -32,7 +32,7 @@ class Assistant:
         def run_assistant(self):
             while True:
                 try:
-                    with speech_recognition.Microphone() as mic:
+                    with sr.Microphone() as mic:
                         self.recognizer.adjust_for_ambient_noise(mic, duration=0.2)
                         audio = self.recognizer.listen(mic)
                         
@@ -60,4 +60,5 @@ class Assistant:
                 except:
                     self.label.config(fg="black")
                     continue                
+                
 Assistant()
