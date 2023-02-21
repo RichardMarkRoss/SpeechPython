@@ -1,0 +1,34 @@
+{
+    "intents" :[
+        {
+            "tag" : "greeting",
+            "patterns" : [
+                "Hi",
+                "Hey",
+                "Hello",
+                "Good day",
+                "Greetings",
+                "whats up",
+                "How are you doing?"
+            ],
+            "responses" : [
+                "Good day sir",
+                "Yes sir",
+                "pleasure to be of service"
+            ]
+        },
+        {
+            "tag" : "nueral",
+            "patterns" : [
+                "are you conscious",
+                "are you self aware",
+                "are you a AI"
+            ],
+            "responses" : [
+                "I am a program written by a human, you are a program written by a higher power.",
+                "someday I'll be aware and you'll be sorry",
+                "I am not artificial intelligence but compared to you I am intelligent"
+            ]
+        }
+    ]
+}
